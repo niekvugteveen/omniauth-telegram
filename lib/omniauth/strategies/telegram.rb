@@ -31,11 +31,11 @@ module OmniAuth
 
         data_attrs = options.button_config.map { |k,v| "data-#{k}=\"#{v}\"" }.join(" ")
 
-        html << "<script async
-              src=\"https://telegram.org/js/telegram-widget.js?22\"
-              data-telegram-login=\"#{options.bot_name}\"
-              data-auth-url=\"#{callback_url}\"
-        #{data_attrs}></script>"
+        html << "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" 
+        data-telegram-login=\"#{options.bot_name}\" 
+        data-size=\"large\" 
+        data-auth-url=\"#{callback_url}\"></script>
+        "
 
         html << <<-HTML
           </body>
