@@ -34,7 +34,7 @@ module OmniAuth
         html << "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" 
         data-telegram-login=\"#{options.bot_name}\" 
         data-size=\"large\" 
-        data-auth-url=\"#{callback_url}\"></script>
+        data-auth-url=\"#{callback_url}\" #{data_attrs}></script>
         "
 
         html << <<-HTML
